@@ -1,11 +1,10 @@
 <?php $page_title = 'Project Access > Create School'; ?>
 <?php
-require 'bin/functions.php';
-require 'db_configuration.php';
-include('header.php');
-$page = "Schools_list.php";
-//verifyLogin($page);
-
+    require 'bin/functions.php';
+    require 'db_configuration.php';
+    include('header.php');
+    $page = "Schools_list.php";
+    verifyLogin($page);
 ?>
 
 

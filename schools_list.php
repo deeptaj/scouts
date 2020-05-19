@@ -29,6 +29,11 @@
         width: 100%;
     }
 
+    #silc {
+            width: 300;
+            height: 85;
+    }
+
     .thumbnailSize {
         height: 100px;
         width: 100px;
@@ -73,7 +78,17 @@
     <h2 id="title">School List</h2><br>
 
     <div id="customerTableView">
-        <button><a class="btn btn-sm" href="createSchool.php">Create a School</a></button>
+        <?php
+         // display the create button only if the user has logged in
+           // if(isset($_SESSION['role']))
+          //  {
+              // echo   '<button><a class="btn btn-sm" href="createSchool.php">Create a School</a></button>';
+           // }
+        //?>
+
+        
+    <button><a class="btn btn-sm" href="createSchool.php">Create a School</a></button>
+
         <table class="display" id="ceremoniesTable" style="width:100%">
             <div class="table responsive">
                 <thead>
@@ -84,10 +99,11 @@
                         <th>Year</th>
                         <th>Type</th>
                         <th>State</th>
-                        <th>Modify</th>
-                        <th>Delete</th>
+                        <th>Modify </th>
+                        <th>Delete </th>
                     </tr>
                 </thead>
+                
                 <tbody>
                     <?php
 
@@ -95,13 +111,17 @@
                     if ($id->num_rows > 0) {
                         // output data of each row
                         while ($row = $id->fetch_assoc()) {
-                            echo '<tr>
-                                <td><img class="thumbnailSize" src="' . 'Images/index_images/' . $row["image_name"] . '" alt="' . $row["image_name"] . '"></td>
+                            echo '<tr>                            
+                                <td>
+                                    <a href = "displaySchool.php?school_id=' . $row["school_id"] . '">
+                                       <img class="thumbnailSize" src="' . 'Images/index_images/' . $row["image_name"] . '" alt="' . $row["image_name"] . '">
+                                    </a>
+                                </td>
                                 <td>' . $row["school_id"] . '</td>
-                                <td>' . $row["name"] . ' </span> </td>
+                                <td><a href="displaySchool.php?school_id=' . $row["school_id"] . '"> ' . $row["name"] . '  </a></td>
                                 <td>' . $row["year_founded"] . '</td>
                                 <td>' . $row["school_type"] . '</td>
-                                <td>' . $row["state_name"] . ' </span> </td>                              
+                                <td>' . $row["state_name"] . ' </td>                              
                                 <td><a class="btn btn-warning btn-sm" href="modifySchool.php?school_id=' . $row["school_id"] . '">Modify</a></td>
                                 <td><a class="btn btn-danger btn-sm" href="deleteSchool.php?school_id=' . $row["school_id"] . '">Delete</a></td>
                             </tr>';
@@ -143,7 +163,7 @@
     $(document).ready(function() {
 
         $('#ceremoniesTable').DataTable({
-            dom: 'Bfrtip',
+            dom: 'lBfrtip', 
             buttons: [
                 'copy', 'excel', 'csv', 'pdf'
             ]

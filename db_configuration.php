@@ -1,5 +1,11 @@
 <?php
 
+// DEFINE('DATABASE_HOST', 'localhost');
+// DEFINE('DATABASE_DATABASE', 'icsbinco_scouts');
+// DEFINE('DATABASE_USER', 'icsbinco_scout');
+// DEFINE('DATABASE_PASSWORD', 'Nandos@3456');
+
+
 DEFINE('DATABASE_HOST', 'localhost');
 DEFINE('DATABASE_DATABASE', 'scouts');
 DEFINE('DATABASE_USER', 'root');

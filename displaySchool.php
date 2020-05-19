@@ -1,4 +1,7 @@
 <?php
+    // start output buffering
+    ob_start();
+
     // this page is a simple router
     // if the URL exists, it opens the URL
     // if the URL doesn't exist, then it displays the default view only page
@@ -18,6 +21,8 @@
     if(@file($url))  // url exists
     {
         exit(header('location: ' . $url));
+        //echo "<script>window.open(".$url.");</script>";
+
     }
     else // url doesn't exist, go to default page
     {

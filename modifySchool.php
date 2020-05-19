@@ -6,7 +6,7 @@
     require 'db_configuration.php';
     include('header.php'); 
     $page="schools_list.php";
-   // verifyLogin($page);
+   verifyLogin($page);
 
 ?>
 <div class="container">
