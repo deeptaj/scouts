@@ -50,7 +50,7 @@ if(!isset($page_title)) { $page_title = 'Project Access'; }
                 echo '<li class="nav-item active"><a class="nav-link" id="header" href="resources_list.php">Resources<span class="sr-only">(current)</span></a>';
                 echo '<li class="nav-item active"><a class="nav-link" id="header" href="inspirational_videos.php">Inspiration<span class="sr-only">(current)</span></a>';
                 echo '<li class="nav-item active"><a class="nav-link" id="header" href="about.php">About<span class="sr-only">(current)</span></a></li>';
-                echo '<li class="nav-item active"><a class="nav-link" id="header" href="preferences.php">Preferences<span class="sr-only">(current)</span></a></li>';
+               // echo '<li class="nav-item active"><a class="nav-link" id="header" href="preferences.php">Preferences<span class="sr-only">(current)</span></a></li>';
                 echo '<li class="nav-item active"><a class="nav-link" id="header" href="users.php">Users<span class="sr-only">(current)</span></a></li>';
                 echo '<li class="nav-item active"><a class="nav-link" id="header" href="help.php">Help<span class="sr-only">(current)</span></a></li>';
                 echo '<li class="nav-item active"><a class="nav-link" id="header" href="logout.php">Logout<span class="sr-only">(current)</span></a></li>';
@@ -59,7 +59,7 @@ if(!isset($page_title)) { $page_title = 'Project Access'; }
                 echo '<li class="nav-item active"><a class="nav-link" id="header" href="resources_list.php">Resources<span class="sr-only">(current)</span></a>';
                 echo '<li class="nav-item active"><a class="nav-link" id="header" href="inspirational_videos.php">Inspiration<span class="sr-only">(current)</span></a>';
                 echo '<li class="nav-item active"><a class="nav-link" id="header" href="about.php">About<span class="sr-only">(current)</span></a></li>';
-                echo '<li class="nav-item active"><a class="nav-link" id="header" href="preferences.php">Preferences<span class="sr-only">(current)</span></a></li>';
+                //echo '<li class="nav-item active"><a class="nav-link" id="header" href="preferences.php">Preferences<span class="sr-only">(current)</span></a></li>';
                 echo '<li class="nav-item active"><a class="nav-link" id="header" href="help.php">Help<span class="sr-only">(current)</span></a></li>';
                 echo '<li class="nav-item active"><a class="nav-link" id="header" href="loginForm.php">Login<span class="sr-only">(current)</span></a></li>';
             }

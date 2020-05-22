@@ -64,10 +64,7 @@ Explore these resources for support from Government, NGOs, and other organizatio
 
   <tr> <td> <a href="http://www.udaan.org/parivaar/india.html#ANDHRA" target="_blank"> List of organizations in Andhra Pradesh  </a> </td>  </tr>
 
-  <tr> <td> <a href="https://www.thehindu.com/news/cities/Vijayawada/many-challenged-youth-land-jobs-in-mela-at-alc/article30315124.ece" target="_blank"> Many challenged youth land jobs in mela at ALC  </a> </td>  </tr>
-
   <tr> <td> <a href="http://vikaspedia.in/social-welfare/differently-abled-welfare/policies-and-standards/rights-of-persons-with-disabilities-act-2016" target="_blank"> Rights of Persons with disabilities Act 2016  </a> </td>  </tr>
-  
   
 
 <tr> <td> <a href="https://www.nhp.gov.in/disease/non-communicable-disease/disabilities" target="_blank"> National Health Portal of India  </a> </td>  </tr>
@@ -75,6 +72,32 @@ Explore these resources for support from Government, NGOs, and other organizatio
 </table>
 
 
+
+
+
+</body>
+
+</head>
+
+<body>
+<br>
+<h3 style = "color: #01B0F1;">Employment Opportunities </h3>
+<br>
+
+Explore these local businesses in Andhra Pradesh that offer jobs and recruitment for youth with disabilities.
+
+<br> <br>
+
+<table style="width:400px; border: 1px solid black">
+  <tr> <td> <a href="http://www.aegisindia.com/" target="_blank"> Aegis: logistics services to the oil, gas, and chemical industry  </a> </td>  </tr>
+
+  <tr> <td> <a href="https://www.accenture.com/us-en" target="_blank"> Accenture  </a> </td>  </tr>
+
+  <tr> <td> <a href="https://www.flipkart.com/" target="_blank"> Flipkart: Online shopping  </a> </td>  </tr>
+
+  <tr> <td> <a href="https://ksml.in/" target="_blank"> Kallam: Textiles unlimited  </a> </td>  </tr>
+  
+</table>
 
 </body>
 

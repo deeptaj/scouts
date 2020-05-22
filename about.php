@@ -10,8 +10,8 @@
 
 <style>
     .image {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 240px;
         padding: 20px 20px 20px 20px;
     }
 
@@ -22,6 +22,7 @@
 
     #title {
         text-align: center;
+        font-size: 35px;
         color: darkgoldenrod;
     }
 
@@ -31,13 +32,16 @@
 
     .directions {
         text-align: center;
-        padding: 20px 40px 0px 40px;
+        padding: 10px 40px 0px 40px;
+        font-size: 18px;
+        font-style: italic;
         color: darkgreen;
     }
 
     .description {
         padding: 0px 40px 0px 0px;
         color: darkgoldenrod;
+        font-size: 16px;
     }
 
     #silc {
@@ -47,6 +51,7 @@
 
     .Name {
         color: darkgreen;
+        font-size: 25px;
     }
 </style>
 
@@ -54,7 +59,7 @@
     <!--this is the tool bar-->
 
     <h2 id="title">About Project Access</h2>
-    <h4 class="directions">This website is developed by Deepta Jasthi for "River Valleys Girl Scouts" project. </h4>
+    <h4 class="directions">This website is developed by Deepta Jasthi for the Girl Scouts Gold Award project. </h4>
 </body>
 
 <script>
@@ -81,8 +86,8 @@
 
 var s1 = new Student(
       "http://www.deepta.com",
-      "Deepta Jasthi",
-      "Images/about_images/deepta.jpg",
+      "",
+      "Images/about_images/deepta1.jpg",
       "I’m Deepta Jasthi, an 18 year old student from St. Paul, Minnesota. I’ve been involved in the Girl Scouts program for over 10 years, and I came up with this idea for my Gold Award Project. <br> <br> A few years ago, I visited my grandparents in India and noticed the school when going around the city with my cousins. I came to know that it provided training for physically challenged youth, and I was curious about the kind of “training” that the school offered. This June, I went to India again and I got an opportunity to visit the school. After learning a little more about the school, its purpose and the topic of “youth with disabilities in India” I realized that there wasn’t a place that had various information about schools, training places, and job opportunities in one place, so I decided to compile the resources available onto a website. <br> <br> I thought I could make an impact by connecting different areas related to the well-being of physically handicapped youth, and help other youth my age have more education opportunities."
       );
 
@@ -93,4 +98,5 @@ var s1 = new Student(
     }
 
     printoutStudents();
+    
 </script>

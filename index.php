@@ -4,6 +4,40 @@ require 'db_configuration.php';
 include('header.php'); 
 
 ?>
+<?php
+if (isset($_GET['sortorder'])) {
+    $sortorder = mysqli_real_escape_string($db, $_GET['sortorder']);
+
+    if($sortorder == "name"){
+
+        $sql2 = "SELECT * FROM `schools` ORDER BY name;";
+        $sql3 = "SELECT `image_name` FROM `schools`ORDER BY name;"; 
+        $sql4 = "SELECT `school_id` FROM `schools`ORDER BY name;";
+
+    }
+
+    if($sortorder == "type"){
+        $sql2 = "SELECT * FROM `schools` ORDER BY keywords;";
+        $sql3 = "SELECT `image_name` FROM `schools`ORDER BY keywords;";
+        $sql4 = "SELECT `school_id` FROM `schools`ORDER BY keywords;";
+    }
+
+    if($sortorder == "location"){
+        $sql2 = "SELECT * FROM `schools` ORDER BY state_name;";
+        $sql3 = "SELECT `image_name` FROM `schools`ORDER BY state_name;";
+        $sql4 = "SELECT `school_id` FROM `schools`ORDER BY state_name;";
+    }
+    
+}
+
+else{
+
+    $sql2 = "SELECT `name` FROM `schools`";
+    $sql3 = "SELECT `image_name` FROM `schools`";
+    $sql4 = "SELECT `school_id` FROM `schools`";
+
+}
+?>
 
 <html>
     <head>
@@ -35,6 +69,7 @@ include('header.php');
         }
         #directions {
             text-align: center;
+            font-size: 17px;
         }
         #title {    
             color: black;        
@@ -48,7 +83,6 @@ include('header.php');
         color: darkgoldenrod;
         }
 
-
     </style>
     <body>
     <?php
@@ -59,14 +93,17 @@ include('header.php');
         }
     ?>
     <h1 id = "title2">Welcome to Project Access</h1>
-    <h2 id = "directions">Select a school to know more about it.</h2><br>
-    
+    <h2 id = "directions">Below is a list of school in Andhra Pradesh that provide education for those with physical handicaps. <div>
+    Select a school to know more about it.</h2><br>
+
+    Sort by:
+    <a href = 'index.php?sortorder=name' title = "projectaccess"> Name </a>
+    <a href = 'index.php?sortorder=type' title = "projectaccess"> Type </a>
+    <a href = 'index.php?sortorder=location' title = "projectaccess"> Location </a>
+
     <?php
 
     $sql1 = "SELECT `value` FROM `preferences` WHERE `name`= 'NO_OF_TOPICS_PER_ROW'";
-    $sql2 = "SELECT `name` FROM `schools`";
-    $sql3 = "SELECT `image_name` FROM `schools`";
-    $sql4 = "SELECT `school_id` FROM `schools`";
 
 
     $results1 = mysqli_query($db,$sql1);
@@ -129,6 +166,6 @@ include('header.php');
     }   
     echo"</table>";
     ?>
-    
     </body>
+           <a href="https://www.freecounterstat.com" title="website hit counter"><img style = "float: right;" src="https://counter3.stat.ovh/private/freecounterstat.php?c=s1nqlapdh2mu2qf3ly8zmw9kpxzk27mm" border="0" title="website hit counter" alt="website hit counter"></a>
 </html>
