@@ -20,7 +20,12 @@
 
     if(@file($url))  // url exists
     {
-        exit(header('location: ' . $url));
+        header( 'Content-type: text/html; charset=utf-8' );
+        header('location: ' . $url);
+        echo "<html></html>";  // - Tell the browser there the page is done
+    flush();               // - Make sure all buffers are flushed
+    ob_flush();            // - Make sure all buffers are flushed
+    exit;                  // - Prevent any more output from messing up the redirect
         //echo "<script>window.open(".$url.");</script>";
 
     }

@@ -13,10 +13,10 @@
     $name = mysqli_real_escape_string($db, $_POST['name']);
     $description = mysqli_real_escape_string($db,$_POST['description']);
     $year_founded = mysqli_real_escape_string($db,$_POST['year_founded']);
-    $school_type = mysqli_real_escape_string($db,$_POST['current_enrollment']);
-    $current_enrollment = mysqli_real_escape_string($db,$_POST['total_students_served']);
-    $total_students_served = mysqli_real_escape_string($db,$_POST['mobile']);
-    $mobile = mysqli_real_escape_string($db,$_POST['website']);
+    $school_type = mysqli_real_escape_string($db,$_POST['school_type']);
+    $current_enrollment = mysqli_real_escape_string($db,$_POST['current_enrollment']);
+    $total_students_served = mysqli_real_escape_string($db,$_POST['total_students_served']);
+    $mobile = mysqli_real_escape_string($db,$_POST['mobile']);
     $website = mysqli_real_escape_string($db,$_POST['website']);
     $email = mysqli_real_escape_string($db,$_POST['email']);
     $address = mysqli_real_escape_string($db,$_POST['address']);

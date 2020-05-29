@@ -15,8 +15,47 @@
     $page = "resources_list.php";
     //verifyLogin($page);
 ?>
+    <style>
+        .image {
+            width: 100px;
+            height: 100px;
+            padding: 20px 20px 20px 20px;
+            transition: transform .2s;
+        }
+        .image:hover {
+            transform: scale(1.2)
+        }
+        #table_1 {
+            border-spacing: 300px 0px;
+        }
+        #table_2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #silc {
+            width: 200;
+            height: 110;
+        }
+        #welcome {
+            text-align: center;
+        }
+        #directions {
+            text-align: center;
+            font-size: 17px;
+        }
+        #title {    
+            color: black;        
+            text-align: center;
+        }
+        a:visited, a:link, a:active {
+            text-decoration: none;
+        }
+        #title2 {
+        text-align: center;
+        color: darkgoldenrod;
+        }
 
-
+    </style>
 <style>
   table {
     font-family: arial, sans-serif;

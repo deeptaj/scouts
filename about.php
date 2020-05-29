@@ -7,9 +7,17 @@
 <head>
     <title> Project Access (About) </title>
 </head>
+    <style>
+        
+        #silc {
+            width: 190;
+            height: 100;
+        }
+
+    </style>
 
 <style>
-    .image {
+    .image100 {
         width: 180px;
         height: 240px;
         padding: 20px 20px 20px 20px;
@@ -76,13 +84,11 @@
         this.toString = function () {
             document.write("<table class = 'table_2'>");
             document.write("<tr>");
-            document.write("<td><a href ='" + this.href + "' title = '" + this.name + "'><image class = 'image' src='" + this.image_src + "'></image></a></td>");
+            document.write("<td><a href ='" + this.href + "' title = '" + this.name + "'><image class = 'image100' src='" + this.image_src + "'></image></a></td>");
             document.write("<td><h2 class = 'Name'>" + this.name + "</h2><h4 class = 'description'>" + this.description + "</h4></td>");
             document.write("</tr></table>");
         }
     }
-
-
 
 var s1 = new Student(
       "http://www.deepta.com",
@@ -90,8 +96,6 @@ var s1 = new Student(
       "Images/about_images/deepta1.jpg",
       "I’m Deepta Jasthi, an 18 year old student from St. Paul, Minnesota. I’ve been involved in the Girl Scouts program for over 10 years, and I came up with this idea for my Gold Award Project. <br> <br> A few years ago, I visited my grandparents in India and noticed the school when going around the city with my cousins. I came to know that it provided training for physically challenged youth, and I was curious about the kind of “training” that the school offered. This June, I went to India again and I got an opportunity to visit the school. After learning a little more about the school, its purpose and the topic of “youth with disabilities in India” I realized that there wasn’t a place that had various information about schools, training places, and job opportunities in one place, so I decided to compile the resources available onto a website. <br> <br> I thought I could make an impact by connecting different areas related to the well-being of physically handicapped youth, and help other youth my age have more education opportunities."
       );
-
-
 
     function printoutStudents() {
         return s1.toString();

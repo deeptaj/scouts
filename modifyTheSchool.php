@@ -14,10 +14,10 @@
     $name = mysqli_real_escape_string($db, $_POST['name']);
     $description = mysqli_real_escape_string($db,$_POST['description']);
     $year_founded = mysqli_real_escape_string($db,$_POST['year_founded']);
-    $school_type = mysqli_real_escape_string($db,$_POST['current_enrollment']);
-    $current_enrollment = mysqli_real_escape_string($db,$_POST['total_students_served']);
-    $total_students_served = mysqli_real_escape_string($db,$_POST['mobile']);
-    $mobile = mysqli_real_escape_string($db,$_POST['website']);
+    $school_type = mysqli_real_escape_string($db,$_POST['school_type']);
+    $current_enrollment = mysqli_real_escape_string($db,$_POST['current_enrollment']);
+    $total_students_served = mysqli_real_escape_string($db,$_POST['total_students_served']);
+    $mobile = mysqli_real_escape_string($db,$_POST['mobile']);
     $website = mysqli_real_escape_string($db,$_POST['website']);
     $email = mysqli_real_escape_string($db,$_POST['email']);
     $address = mysqli_real_escape_string($db,$_POST['address']);
@@ -51,7 +51,7 @@
     //if (strcmp($status_code, "OK") == 0) {
         
     // Delete Button is clicked
-    if (isset($_POST["delete_button"])){   
+    if (isset($_POST["update_button"])){   
 
         //$file_moved = move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
         //if ($file_moved == true) {
@@ -62,7 +62,7 @@
             $sql = "UPDATE schools
                 SET name = '$name',
                     description = '$description',
-                    year_founded = '$description',
+                    year_founded = '$year_founded',
                     school_type = '$school_type',
                     current_enrollment = '$current_enrollment',
                     total_students_served = '$total_students_served',
@@ -77,7 +77,7 @@
                 echo $sql;
 
             mysqli_query($db, $sql);
-           exit(header('location: schools_list.php?modify_school_status=SUCCESS'));
+           //exit(header('location: schools_list.php?modify_school_status=SUCCESS'));
         //}
     } 
     else {

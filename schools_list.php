@@ -30,8 +30,8 @@
     }
 
     #silc {
-            width: 300;
-            height: 85;
+            width: 200;
+            height: 110;
     }
 
     .thumbnailSize {

@@ -30,7 +30,7 @@ if(!isset($page_title)) { $page_title = 'Project Access'; }
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <a href="index.php" title="Project Access"><img id="silc" src="Images/index_images/silc_home.jpg"></a> 
+            <a href="index.php" title="Project Access"><img id="silc" src="Images/index_images/silc_home1.jpg"></a> 
             
             <!-- Login / Logout Nav menu item
                Checks if there is a valid session and if so displays "logout"
