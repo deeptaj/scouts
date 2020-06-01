@@ -61,36 +61,13 @@ $indian_all_states  = array(
 </style>
 
 <div class="container">
-    <?php
-    if (isset($_GET['createSchool'])) {
-        if ($_GET["createSchool"] == "fileRealFailed") {
-            echo '<br><h3 align="center" class="bg-danger">FAILURE - Your image is not real, Please Try Again!</h3>';
-        }
-    }
-    if (isset($_GET['createSchool'])) {
-        if ($_GET["createSchool"] == "answerFailed") {
-            echo '<br><h3 align="center" class="bg-danger">FAILURE - Your answer was not one of the choices, Please Try Again!</h3>';
-        }
-    }
-    if (isset($_GET['createSchool'])) {
-        if ($_GET["createSchool"] == "fileTypeFailed") {
-            echo '<br><h3 align="center" class="bg-danger">FAILURE - Your image is not a valid image type (jpg,jpeg,png,gif), Please Try Again!</h3>';
-        }
-    }
-    if (isset($_GET['createSchool'])) {
-        if ($_GET["createSchool"] == "fileExistFailed") {
-            echo '<br><h3 align="center" class="bg-danger">FAILURE - Your image does not exist, Please Try Again!</h3>';
-        }
-    }
 
-    ?>
     <form action="createTheSchool.php" method="POST" enctype="multipart/form-data">
         <br>
         <h3 id="title">Create A School</h3> <br>
 
         <!-- school_id, name, description, year_founded, school_type, current_enrollment, total_students_served, mobile, 
         website, email, address, state_name, state_code, zip_code, keywords, image_name -->
-
 
         <table>
             <tr>
@@ -105,7 +82,7 @@ $indian_all_states  = array(
 
             <tr>
                 <td style="width:100px">Year Founded:</td>
-                <td> <input type="number" id="year_input" name="year_founded" min="1920" max="2020" value="1990"></td>
+                <td> <input type="number" id="year_founded" name="year_founded" min="1920" max="2020" value="1990"></td>
             </tr>
 
             <tr>

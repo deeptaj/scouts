@@ -47,11 +47,10 @@
     </style>
     <body>
    
-<h2 id="title">Welcome to the Project Access!</strong></h2>
-<h5>Versioin 0.9 (December 2019)</h5>
-<p>Each of the icons on the home page represents a school.  Click on the icon to know more about the school.</p>
+<h2 id="title">Welcome to Project Access!</strong></h2>
+<h5>Versioin 1.0 (May 2020)</h5>
 <p>Click  "Schools" to see the sortable, filterable list of schools. </p>
-<p>Click  "Resources" to access the resoruces available to physically challenged students.</p>
+<p>Click  "Resources" to access the resoruces and employment available to physically challenged students.</p>
 <p>Click  "Inspiration" to access the inspiring stories of physically challenged who overcame their limitations.</p>
 
 

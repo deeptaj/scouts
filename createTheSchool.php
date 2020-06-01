@@ -84,10 +84,10 @@
             // <!-- school_id, name, description, year_founded, school_type, current_enrollment, total_students_served, mobile, 
             // website, email, address, state_name, state_code, zip_code, keywords, image_name -->
 
-            $sql = "INSERT INTO schools (name, description, year_founded, school_type, 
-                        current_enrollment, total_students_served,
-                        mobile, website, email, address, state_name, 
-                        state_code, zip_code, keywords, image_name)
+            $sql = "INSERT INTO schools ('name', 'description', 'year_founded', 'school_type', 
+                        'current_enrollment', 'total_students_served',
+                        'mobile', 'website', 'email', 'address', 'state_name', 
+                        'state_code', 'zip_code', 'keywords', 'image_name')
                     VALUES ('$name','$description','$year_founded','$school_type',
                         '$current_enrollment','$total_students_served',
                         '$mobile','$website', '$email',  '$address', '$state_name', 
